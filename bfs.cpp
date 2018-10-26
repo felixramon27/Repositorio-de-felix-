@@ -5,10 +5,10 @@
 using namespace std;
 
 int n,m;
-vector<int> g[20000];
+vector<int> g[200000]; //graph
 visit[200000];
 
-void bfs(){
+void bfs(){  //bfs 
   queue<int> q;
   q.push(0);
   while(!q.empty()){
@@ -32,5 +32,5 @@ int main(){
     g[a].pb(b);
     g[b].pb(a);
   }
-  bfs();
+  bfs(); //bfs
 }
